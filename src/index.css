@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    font-weight: normal;
+    color: #3D3D3D;
+}
+
+a {
+    color: #3D3D3D;
+    text-decoration: none;
+}
+
+p {
+    font-family: Microsoft YaHei;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.header {
+    background: url("./images/head-bg.jpg");
+    background-size: cover;
+    background-size: 100% 100%;
+}
