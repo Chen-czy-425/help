@@ -17,7 +17,13 @@ export function Question(props: any) {
     return (
         <>
             <h1 className="text-[28px] font-bold text-[#333333]">常见问题</h1>
-            <div className="mt-[24px] px-[42px] pt-[42px] pb-[40px] bg-[#FFF] grid  grid-cols-3 ">
+            <div className="mt-[24px] 
+                            px-[42px] 
+                            pt-[42px] 
+                            pb-[40px] 
+                          bg-[#FFF] 
+                            grid  
+                            grid-cols-3 ">
                 {
                     M1_data?.questions.map((item: any) => (
                         <div className='relative' key={item.docid}>

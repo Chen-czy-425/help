@@ -14,17 +14,14 @@ const Home = () => {
             setQuestionData(res.data.data.lists);
             setProductData(res.data.data.type);
         })
-
     }, []);
-
-
+    
     return (
         <>
             <div className="w-[1200px] mx-[auto]">
                 <Question question={questionData}></Question>
                 <Product product={productData}></Product>
             </div>
-
         </>
     )
 }

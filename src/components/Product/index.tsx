@@ -1,5 +1,5 @@
 
-export function Product (props: any) {
+export function Product(props: any) {
     return (
         <>
             <h1 className="text-[28px] font-bold text-[#333333] mt-[40px]">鲁大师产品服务</h1>
@@ -23,7 +23,9 @@ export function Product (props: any) {
                                                 hover:shadow-lg"
                                     key={item.id}>
                                     <img src={item.src} alt="" className="" />
-                                    <div className="text-[#333333] text-[14px] text-center px-[12px] mt-[18px] mb-[12px]">{item.question_type_name}</div>
+                                    <div className="text-[#333333] text-[14px] text-center px-[12px] mt-[18px] mb-[12px]">
+                                        {item.question_type_name}
+                                    </div>
                                 </div>
                             )
                         }
