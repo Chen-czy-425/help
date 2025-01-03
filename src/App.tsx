@@ -1,8 +1,7 @@
 import { Outlet } from "react-router-dom";
-import {Header,Bottom,Search,Service} from "./components";
+import { Header, Bottom, Search, Service } from "./components";
 
 function App() {
-
     return (
         <>
             <div className="w-[100%] flex justify-center header h-[80px] ">
@@ -13,7 +12,7 @@ function App() {
                 {/* 搜索 */}
                 <Search />
             </div>
-            <Service/>
+            <Service />
             <div className="w-auto bg-[#F6F9FB] py-[36px]">
                 {/* 页面跳转 */}
                 <Outlet />
@@ -23,7 +22,7 @@ function App() {
                 <Bottom />
             </div>
         </>
-    )
+    );
 }
 
-export default App
+export default App;

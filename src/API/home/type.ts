@@ -3,7 +3,6 @@ export interface QuestionType {
     questions: Array<{ docid: string; question_title: string }>;
 }
 
-
 export interface ProductType {
     id: String;
     src: String;
@@ -11,12 +10,12 @@ export interface ProductType {
 }
 
 export interface ApiResponse {
-    data:{
-        data:{
+    data: {
+        data: {
             type: ProductType[];
             lists: QuestionType[];
-        }
+        };
         msg: string;
         errno: number;
-    }
+    };
 }

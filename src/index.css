@@ -12,11 +12,11 @@ body {
     font-family: "Microsoft YaHei";
     font-size: 14px;
     font-weight: normal;
-    color: #3D3D3D;
+    color: #3d3d3d;
 }
 
 a {
-    color: #3D3D3D;
+    color: #3d3d3d;
     text-decoration: none;
 }
 
@@ -31,4 +31,3 @@ p {
     background-size: cover;
     background-size: 100% 100%;
 }
-

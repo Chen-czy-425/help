@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react"
-import { Question, Product } from "../../components"
+import { useEffect, useState } from "react";
+import { Question, Product } from "../../components";
 import { getHomeData } from "../../API";
 import { ProductType, QuestionType } from "../../API/home/type";
 
@@ -10,12 +10,12 @@ const Home = () => {
 
     // 页面加载时发送请求
     useEffect(() => {
-        getHomeData().then(res => {
+        getHomeData().then((res) => {
             setQuestionData(res.data.data.lists);
             setProductData(res.data.data.type);
-        })
+        });
     }, []);
-    
+
     return (
         <>
             <div className="w-[1200px] mx-[auto]">
@@ -23,7 +23,7 @@ const Home = () => {
                 <Product product={productData}></Product>
             </div>
         </>
-    )
-}
+    );
+};
 
 export default Home;
