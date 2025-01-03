@@ -1,12 +1,15 @@
 import { Outlet } from "react-router-dom";
 import logo from "./images/logo.png"
 import search from "./images/search.png"
+import service from "./images/service.png"
+import weChat from "./images/wechat.png"
+
 // 头部
 const Header = () => {
     return (
         <>
             <div className="w-[1100px] flex items-center">
-                <a href="/" className="block">
+                <a href="https://www.ludashi.com/" className="block">
                     <img src={logo} alt="logo" />
                 </a>
                 <p className="text-[#FFFFFF] block h-[80px] leading-[77px] ml-[23px]">帮助中心</p>
@@ -32,6 +35,23 @@ const Search = () => {
         </>
     )
 }
+
+// 联系客服
+const Service = () => {
+    return (
+        <>
+            <div className="fixed top-[650px] left-[50%] ml-[620px] hover:cursor-pointer ">
+                <img src={service} alt="" className="mb-[14px] w-[70px] mx-[auto]"/>
+                <div className="flex items-center">
+                    <img src={weChat} alt="" className=""/>
+                    <span className="text-[#0056FF] text-[16px] ml-[10px] select-none">联系客服</span>
+                </div>
+            </div>
+        </>
+    )
+}
+
+// 底部
 const Bottom = () => {
     return (
         <>
@@ -64,6 +84,7 @@ function App() {
                 {/* 搜索 */}
                 <Search />
             </div>
+            <Service/>
             <div className="w-auto bg-[#F6F9FB] py-[36px]">
                 {/* 页面跳转 */}
                 <Outlet />
