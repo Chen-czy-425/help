@@ -9,6 +9,7 @@ export interface ProductType {
     src: String;
     question_type_name: String;
 }
+
 export interface ApiResponse {
     data:{
         data:{
