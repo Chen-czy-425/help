@@ -1,5 +1,5 @@
-import Home  from '../pages/home/Home';
-import Detail from '../pages/Detail/Detail';
+import Home  from '../pages/home';
+import Detail from '../pages/detail/index';
 import App from '../App'
 import { createBrowserRouter } from 'react-router-dom';
 

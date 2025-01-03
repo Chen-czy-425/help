@@ -27,15 +27,8 @@ p {
 }
 
 .header {
-    background: url("./images/head-bg.jpg");
+    background: url("../src/assets/head-bg.jpg");
     background-size: cover;
     background-size: 100% 100%;
 }
 
-/* 添加hover */
-.m2__shadow :hover{
-    cursor: pointer;
-    border-radius: 14px;
-    background: #FFFFFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
