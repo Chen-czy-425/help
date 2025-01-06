@@ -16,29 +16,11 @@ export function Question(props: any) {
     return (
         <>
             <h1 className="text-[28px] font-bold text-[#333333]">常见问题</h1>
-            <div
-                className="mt-[24px] 
-                            px-[42px] 
-                            pt-[42px] 
-                            pb-[40px] 
-                          bg-[#FFF] 
-                            grid  
-                            grid-cols-3 "
-            >
+            <div className="mt-[24px] grid grid-cols-3 bg-[#FFF] px-[42px] pb-[40px] pt-[42px]">
                 {M1_data?.questions.map((item: any) => (
                     <div className="relative" key={item.docid}>
                         <div
-                            className="mb-[29px] 
-                                          hover:text-[#0056FF] 
-                                            hover:cursor-pointer
-                                            before:absolute 
-                                            before:top-[4px]
-                                            before:inline-block 
-                                            before:h-[14px]
-                                            before:w-[4px]  
-                                            before:rounded-[5px] 
-                                          before:bg-[#9FC7FF]  
-                                            before:content-[''] "
+                            className="mb-[29px] before:absolute before:top-[4px] before:inline-block before:h-[14px] before:w-[4px] before:rounded-[5px] before:bg-[#9FC7FF] before:content-[''] hover:cursor-pointer hover:text-[#0056FF]"
                             onClick={() => {
                                 handleClick(item.docid);
                             }}

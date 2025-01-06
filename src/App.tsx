@@ -4,11 +4,11 @@ import { Header, Bottom, Search, Service } from "./components";
 function App() {
     return (
         <>
-            <div className="w-[100%] flex justify-center header h-[80px] ">
+            <div className="header flex h-[80px] w-[100%] justify-center">
                 {/* 头部 */}
                 <Header />
             </div>
-            <div className="w-[100%] h-[90px] bg-[#EBF2F9] pt-[20px] ">
+            <div className="h-[90px] w-[100%] bg-[#EBF2F9] pt-[20px]">
                 {/* 搜索 */}
                 <Search />
             </div>
@@ -17,7 +17,7 @@ function App() {
                 {/* 页面跳转 */}
                 <Outlet />
             </div>
-            <div className="w-auto flex justify-center">
+            <div className="flex w-auto justify-center">
                 {/* 底部 */}
                 <Bottom />
             </div>
