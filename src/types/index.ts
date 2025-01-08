@@ -1,12 +1,12 @@
 export interface QuestionType {
-    id: String;
+    id: number;
     questions: Array<{ docid: string; question_title: string }>;
 }
 
 export interface ProductType {
-    id: String;
-    src: String;
-    question_type_name: String;
+    id: number;
+    src: string;
+    question_type_name: string;
 }
 
 

@@ -1,5 +1,5 @@
 import { AxiosRequestConfig } from "axios";
-import { service } from "./Server";
+import { service } from "../../api/common/server";
 
 /* 导出封装的请求方法 */
 export const http = {

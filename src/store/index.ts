@@ -8,7 +8,7 @@ type HomeStoreState = {
     setProductData: (data: ProductType[]) => void;
 };
 
-export const useBearStore = create<HomeStoreState>((set) => ({
+export const useHomeStore = create<HomeStoreState>((set) => ({
     questionData: [],
     productData: [],
     setQuestionData: (data) => set({ questionData: data }),

@@ -17,7 +17,11 @@ const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: 'detail/:docid',
+                path: 'detail-by-id-docid/:id/:docid',
+                element: <Detail />
+            },
+            {
+                path: 'detail-by-id/:id',
                 element: <Detail />
             }
         ]

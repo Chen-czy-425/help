@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Question, Product } from "../../components";
-import { getHomeData } from "../../API";
+import { getHomeData } from "../../api";
 import { ProductType, QuestionType } from "../../types";
-import { useBearStore } from "../../store";
+import { useHomeStore } from "../../store";
 const Home = () => {
     const [questionData, setQuestionData] = useState<QuestionType[]>([]);
 
@@ -12,9 +12,8 @@ const Home = () => {
     useEffect(() => {
         getHomeData().then((res) => {
             // 将数据存储在store
-            useBearStore.getState().setQuestionData(res.data.data.lists);
-            useBearStore.getState().setProductData(res.data.data.type);
-
+            useHomeStore.getState().setQuestionData(res.data.data.lists);
+            useHomeStore.getState().setProductData(res.data.data.type);
             setQuestionData(res.data.data.lists);
             setProductData(res.data.data.type);
         });

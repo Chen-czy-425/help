@@ -6,22 +6,19 @@ export function Bottom() {
                 <div>
                     <a
                         href="https://www.ludashi.com/page/contact.php"
-                        className="mx-[5px] text-[#666666]"
-                    >
+                        className="mx-[5px] text-[#666666]">
                         联系我们
                     </a>
                     |
                     <a
                         href="https://www.sobot.com/ticketclient/index.html?sysNum=7b3d901cda854f1985677d1b773800cd&deployId=e492cf1d49d041cba51d253180a1350f&params={%22pid%22:%22home%22,%22from%22:%22officalwebsite%22}"
-                        className="mx-[5px] text-[#666666]"
-                    >
+                        className="mx-[5px] text-[#666666]">
                         意见反馈
                     </a>
                     |
                     <a
                         href="https://www.ludashi.com/link/"
-                        className="mx-[5px] text-[#666666]"
-                    >
+                        className="mx-[5px] text-[#666666]">
                         友情链接
                     </a>
                 </div>
@@ -35,14 +32,12 @@ export function Bottom() {
                     </span>
                     <a
                         href="https://beian.miit.gov.cn/"
-                        className="block text-[#666666]"
-                    >
+                        className="block text-[#666666]">
                         蜀ICP备15008964号-1
                     </a>
                     <a
                         href="https://beian.mps.gov.cn/#/query/webSearch"
-                        className="block text-[#666666]"
-                    >
+                        className="block text-[#666666]">
                         川公网安备&nbsp;51019002000701号
                     </a>
                 </div>
